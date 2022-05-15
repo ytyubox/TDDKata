@@ -106,4 +106,45 @@ final class BowlingGameTests: XCTestCase {
         sut.roll(10)
         XCTAssertEqual(sut.score(), 20)
     }
+    func testHeartBreak() throws {
+        let sut = BowlingGame()
+        for _ in 1...11 {
+            sut.roll(10)
+        }
+        sut.roll(9)
+        XCTAssertEqual(sut.score(), 299)
+    }
+    func testTenthFrameSpare() {
+        let sut = BowlingGame()
+        for _ in 1...9 {
+            sut.roll(10)
+        }
+        sut.roll(9)
+        sut.roll(1)
+        sut.roll(1)
+        XCTAssertEqual(sut.score(), 270)
+    }
+    func testSampleGame() {
+        let sut = BowlingGame() 
+        sut.roll(1);
+        sut.roll(4);
+        sut.roll(4);
+        sut.roll(5);
+        sut.roll(6);
+        sut.roll(4);
+        sut.roll(5);
+        sut.roll(5);
+        sut.roll(10);
+        sut.roll(0);
+        sut.roll(1);
+        sut.roll(7);
+        sut.roll(3);
+        sut.roll(6);
+        sut.roll(4);
+        sut.roll(10);
+        sut.roll(2);
+        sut.roll(8);
+        sut.roll(6);
+        XCTAssertEqual(133, sut.score()); 
+    }
 }
