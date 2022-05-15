@@ -14,10 +14,11 @@ final class BowlingGame {
                 score += 10 + nextTwoBall(ball)
                 ball += 1
                 continue
+
             }
             let frameScore = rolls[ball] + rolls[ball+1]
             if frameScore == 10 {
-                score += frameScore + nextBall(ball)
+                score += frameScore + nextBall(ball+1)
             }
             else {
                 score += frameScore
@@ -28,10 +29,16 @@ final class BowlingGame {
         return score
     }
     private func nextTwoBall(_ ball: Int) -> Int{
-        rolls[ball+1] + rolls[ball+2]
+        guard ball + 2 < rolls.count  else {
+            return 0
+        }
+        return rolls[ball+1] + rolls[ball+2]
     }
     private func nextBall(_ ball: Int) -> Int{
-        rolls[ball+1] 
+        guard ball + 1 < rolls.count  else {
+            return 0
+        }
+        return rolls[ball+1] 
     }
 }
 final class BowlingGameTests: XCTestCase {
@@ -87,5 +94,16 @@ final class BowlingGameTests: XCTestCase {
         let sut = BowlingGame()
         for _ in 1...12 {sut.roll(10)}
         XCTAssertEqual(sut.score(), 300)
+    }
+    func testEndWithStrike() throws {
+        let sut = BowlingGame()
+        for _ in 1...9 {
+            sut.roll(0)
+            sut.roll(0)
+        }
+        sut.roll(2)
+        sut.roll(8)
+        sut.roll(10)
+        XCTAssertEqual(sut.score(), 20)
     }
 }
