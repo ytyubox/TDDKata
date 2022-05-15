@@ -31,16 +31,17 @@ final class BowlingGameTests: XCTestCase {
     func testScoreNoMark() throws {
         let sut = BowlingGame()
         sut.roll(4)
-        sut.roll(9)
-        XCTAssertEqual(sut.score(), 13)
+        sut.roll(4)
+        XCTAssertEqual(sut.score(), 8)
     }
     func testScoreForFrame() throws {
         let sut = BowlingGame()
         sut.roll(4)
-        sut.roll(9)
+        sut.roll(4)
         sut.roll(5)
         sut.roll(3)
-        XCTAssertEqual(sut.testScoreForFrame(1), 13)
-        XCTAssertEqual(sut.testScoreForFrame(2), 21)
+        XCTAssertEqual(sut.testScoreForFrame(1), 8)
+        XCTAssertEqual(sut.testScoreForFrame(2), 16)
     }
+    
 }
