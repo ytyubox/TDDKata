@@ -6,12 +6,21 @@ final class BowlingGame {
     func score() -> Int {
         rolls.reduce(0, +)
     }
-    func testScoreForFrame(_ frame: Int) -> Int {
+    func scoreForFrame(_ frame: Int) -> Int {
         var ball = 0
         var score = 0
         for i in 1...frame {
-            score += rolls[ball] + rolls[ball+1]
+            if rolls[ball] == 10 {
+                ball += 1
+                score += 10 + rolls[ball] + rolls[ball+1]
+                continue
+            }
+            let frameScore = rolls[ball] + rolls[ball+1]
             ball += 2
+            score += frameScore
+            if frameScore == 10 {
+                 score += rolls[ball]
+            }
         }
         return score
     }
@@ -40,8 +49,21 @@ final class BowlingGameTests: XCTestCase {
         sut.roll(4)
         sut.roll(5)
         sut.roll(3)
-        XCTAssertEqual(sut.testScoreForFrame(1), 8)
-        XCTAssertEqual(sut.testScoreForFrame(2), 16)
+        XCTAssertEqual(sut.scoreForFrame(1), 8)
+        XCTAssertEqual(sut.scoreForFrame(2), 16)
     }
-    
+    func testSimpleSpare() throws {
+        let sut = BowlingGame()
+        sut.roll(7)
+        sut.roll(3)
+        sut.roll(3)
+        XCTAssertEqual(sut.scoreForFrame(1), 13)
+    }
+    func testSimpleStrike() throws {
+        let sut = BowlingGame()
+        sut.roll(10)
+        sut.roll(3)
+        sut.roll(3)
+        XCTAssertEqual(sut.scoreForFrame(1), 16)
+    }
 }
