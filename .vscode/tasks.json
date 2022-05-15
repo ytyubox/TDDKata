@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "swift",
+			"command": "swift",
+			"args": [
+				"test", "--enable-code-coverage"
+			],
+			"cwd": "/Users/tsungyu/code/TDDKata",
+			"problemMatcher": [
+				"$swiftc"
+			],
+			"group": "test",
+			"label": "swift test",
+		},
+	]
+}
