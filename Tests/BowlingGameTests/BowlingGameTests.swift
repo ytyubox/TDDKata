@@ -1,44 +1,88 @@
 import XCTest
 final class BowlingGame {
     private var rolls:[Int] = []
-    func roll(_ int: Int) {rolls.append(int)}
+    private var currentFrame = 0
+    private var firStThrowInFrame = false
+    private let scorer = Scorer()
+
+    func roll(_ pin: Int) {
+        scorer.addThrow(pin)
+        adjustCurrentFrame(pin)
+    }
     func score() -> Int { 
-        scoreForFrame(10)
+        scoreForFrame(currentFrame)
      }
     func scoreForFrame(_ frame: Int) -> Int {
-        var ball = 0
-        var score = 0
-        for _ in 1...frame {
-            if rolls.count <= ball {break}
+        scorer.scoreForFrame(frame)
+    }
+    private func adjustCurrentFrame(_ pin: Int) {
+        if firStThrowInFrame == true, adjustFrameForStrike(pin) == false {
+            firStThrowInFrame = false
+        } else {
+            firStThrowInFrame = true
+            advanceFrame()
+        }
+    }
+    private func adjustFrameForStrike(_ pin: Int) -> Bool {
+        if pin == 10 {
+            advanceFrame()
+            return true
+        } else {
+            return false
+        }
+    }
+    private func advanceFrame() {
+        currentFrame = min(10, currentFrame + 1)
+    }
+    private final class Scorer {
+        private var rolls: [Int] = Array(repeating: 0, count: 21)
+        private var currentThrows = 0
+        private var ball = 0
+        func addThrow(_ pins: Int) {
+            rolls[currentThrows] = pins
+            currentThrows += 1
+        }
+        func scoreForFrame(_ theFrame: Int) -> Int {
+            ball = 0
+            var score = 0
+            for _ in 0..<theFrame {
+                if strike() {
+                    score += 10 + nextTwoBall()
+                } else if spare() {
+                    score += 10 + nextBall()
+                } else {
+                    score += twoBallInFrame()
+                }
+            }
+            return score
+        }
+        private func strike() -> Bool {
             if rolls[ball] == 10 {
-                score += 10 + nextTwoBall(ball)
                 ball += 1
-                continue
-
+                return true
+            }else {
+                return false
             }
-            let frameScore = rolls[ball] + rolls[ball+1]
-            if frameScore == 10 {
-                score += frameScore + nextBall(ball+1)
+        }
+        private  func spare() -> Bool {
+            if rolls[ball] + rolls[ball+1] == 10 {
+                ball += 2
+                return true
+            }else {
+                return false
             }
-            else {
-                score += frameScore
-            }
+        }
+        private func nextTwoBall() -> Int{
+            return rolls[ball] + rolls[ball+1]
+        }
+        private func nextBall() -> Int{
+            return rolls[ball] 
+        }
+        private func twoBallInFrame() -> Int {
+            let score = rolls[ball] + rolls[ball + 1]
             ball += 2
-            
+            return score
         }
-        return score
-    }
-    private func nextTwoBall(_ ball: Int) -> Int{
-        guard ball + 2 < rolls.count  else {
-            return 0
-        }
-        return rolls[ball+1] + rolls[ball+2]
-    }
-    private func nextBall(_ ball: Int) -> Int{
-        guard ball + 1 < rolls.count  else {
-            return 0
-        }
-        return rolls[ball+1] 
     }
 }
 final class BowlingGameTests: XCTestCase {
