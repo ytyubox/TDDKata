@@ -17,6 +17,7 @@ let package = Package(
                 targets: ["ScoreKeeper"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/pointfreeco/swift-tagged", from: "0.6.0"),
     ],
     targets: [
         .target(
@@ -33,9 +34,9 @@ let package = Package(
             dependencies: ["BowlingGame"]),
         .target(
                 name: "ScoreKeeper",
-                dependencies: []),
+                dependencies: [.product(name: "Tagged", package: "swift-tagged")]),
         .testTarget(
                 name: "ScoreKeeperTests",
-                dependencies: ["ScoreKeeper"]),
+                dependencies: ["ScoreKeeper", .product(name: "Tagged", package: "swift-tagged")]),
     ]
 )

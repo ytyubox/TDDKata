@@ -28,8 +28,6 @@ class ScoreKeeperTests: XCTestCase {
     ```
     ## Rules
     The returned String always has seven characters. An example would be 000:000
-
-
     """
     func test() {
         let sut = ScoreKeeper()
