@@ -12,6 +12,9 @@ let package = Package(
         .library(
             name: "BowlingGame",
             targets: ["BowlingGame"]),
+        .library(
+                name: "ScoreKeeper",
+                targets: ["ScoreKeeper"]),
     ],
     dependencies: [
     ],
@@ -28,5 +31,11 @@ let package = Package(
         .testTarget(
             name: "BowlingGameTests",
             dependencies: ["BowlingGame"]),
+        .target(
+                name: "ScoreKeeper",
+                dependencies: []),
+        .testTarget(
+                name: "ScoreKeeperTests",
+                dependencies: ["ScoreKeeper"]),
     ]
 )
