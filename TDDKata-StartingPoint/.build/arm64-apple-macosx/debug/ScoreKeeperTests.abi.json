@@ -489,6 +489,27 @@
           "funcSelfKind": "NonMutating"
         },
         {
+          "kind": "Function",
+          "name": "test_",
+          "printedName": "test_()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests(im)test_",
+          "mangledName": "$s16ScoreKeeperTestsAAC5test_yyF",
+          "moduleName": "ScoreKeeperTests",
+          "isOpen": true,
+          "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
           "kind": "Constructor",
           "name": "init",
           "printedName": "init(invocation:)",

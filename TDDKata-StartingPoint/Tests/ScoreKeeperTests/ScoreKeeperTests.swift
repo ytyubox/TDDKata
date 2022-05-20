@@ -28,21 +28,39 @@ final class ScoreKeeper {
 
     func scoreTeamA1() {
         teamAScore += 1
+        if teamAScore > 999 {
+            teamAScore = 999
+        }
     }
     func scoreTeamA2() {
         teamAScore += 2
+         if teamAScore > 999 {
+            teamAScore = 999
+        }
     }
     func scoreTeamA3() {
         teamAScore += 3
+         if teamAScore > 999 {
+            teamAScore = 999
+        }
     }
     func scoreTeamB1() {
         teamBScore += 1
+        if teamBScore > 999 {
+            teamBScore = 999
+        }
     }
     func scoreTeamB2() {
         teamBScore += 2
+        if teamBScore > 999 {
+            teamBScore = 999
+        }
     }
     func scoreTeamB3() {
         teamBScore += 3
+        if teamBScore > 999 {
+            teamBScore = 999
+        }
     }
 }
 
@@ -93,5 +111,29 @@ class ScoreKeeperTests: XCTestCase {
         XCTAssertEqual(sut.getScore(), "012-009")
          sut.scoreTeamB3()
         XCTAssertEqual(sut.getScore(), "012-012")
+    }
+
+    func test_ScoreCountShouldAlways7Digits() {
+        let sut = ScoreKeeper()
+        for _ in 1 ... 999 {
+            sut.scoreTeamA1()
+        }
+        XCTAssertEqual(sut.score, "999-000")
+        sut.scoreTeamA1()
+        XCTAssertEqual(sut.score, "999-000")
+        sut.scoreTeamA2()
+        XCTAssertEqual(sut.score, "999-000")
+        sut.scoreTeamA3()
+        XCTAssertEqual(sut.score, "999-000")
+        for _ in 1 ... 999 {
+            sut.scoreTeamB1()
+        }
+         XCTAssertEqual(sut.score, "999-999")
+        sut.scoreTeamB1()
+        XCTAssertEqual(sut.score, "999-999")
+        sut.scoreTeamB2()
+        XCTAssertEqual(sut.score, "999-999")
+        sut.scoreTeamB3()
+        XCTAssertEqual(sut.score, "999-999")
     }
 }
