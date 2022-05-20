@@ -490,8 +490,8 @@
         },
         {
           "kind": "Function",
-          "name": "test_",
-          "printedName": "test_()",
+          "name": "test_ScoreCountShouldAlways7Digits",
+          "printedName": "test_ScoreCountShouldAlways7Digits()",
           "children": [
             {
               "kind": "TypeNominal",
@@ -500,8 +500,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests(im)test_",
-          "mangledName": "$s16ScoreKeeperTestsAAC5test_yyF",
+          "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests(im)test_ScoreCountShouldAlways7Digits",
+          "mangledName": "$s16ScoreKeeperTestsAAC05test_A24CountShouldAlways7DigitsyyF",
           "moduleName": "ScoreKeeperTests",
           "isOpen": true,
           "declAttributes": [

@@ -6,18 +6,8 @@ import Foundation
 import XCTest
 final class ScoreKeeper {
     var score:String {
-        var n1 = "\(teamAScore)"
-        if n1.count == 2 {
-            n1 = "0" + n1
-        } else if n1.count == 1 {
-            n1 = "00" + n1
-        }
-         var n2 = "\(teamBScore)"
-        if n2.count == 2 {
-            n2 = "0" + n2
-        } else if n2.count == 1 {
-            n2 = "00" + n2
-        }
+        let n1 = String(format: "%03d", teamAScore)
+        let n2 = String(format: "%03d", teamBScore)
         return "\(n1)-\(n2)" 
     }
     var teamAScore = 0
