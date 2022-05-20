@@ -6,8 +6,8 @@ import Foundation
 import XCTest
 final class ScoreKeeper {
     var score:String {
-        let n1 = String(format: "%03d", teamAScore)
-        let n2 = String(format: "%03d", teamBScore)
+        let n1 = String(format: "%03d", min(999,(max(teamAScore, 0))))
+        let n2 = String(format: "%03d", min(999,(max(teamBScore, 0))))
         return "\(n1)-\(n2)" 
     }
     var teamAScore = 0
@@ -18,39 +18,24 @@ final class ScoreKeeper {
 
     func scoreTeamA1() {
         teamAScore += 1
-        if teamAScore > 999 {
-            teamAScore = 999
-        }
     }
     func scoreTeamA2() {
         teamAScore += 2
-         if teamAScore > 999 {
-            teamAScore = 999
-        }
     }
     func scoreTeamA3() {
         teamAScore += 3
-         if teamAScore > 999 {
-            teamAScore = 999
-        }
+        
     }
     func scoreTeamB1() {
         teamBScore += 1
-        if teamBScore > 999 {
-            teamBScore = 999
-        }
+       
     }
     func scoreTeamB2() {
         teamBScore += 2
-        if teamBScore > 999 {
-            teamBScore = 999
-        }
+       
     }
     func scoreTeamB3() {
         teamBScore += 3
-        if teamBScore > 999 {
-            teamBScore = 999
-        }
     }
 }
 
