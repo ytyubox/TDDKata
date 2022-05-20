@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
-options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
-build_start_time: [1652984752, 497490882]
-build_end_time: [1652984753, 487817049]
-inputs:
-  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/TDDKata/TDDKata.swift": [1652593453, 66888809]

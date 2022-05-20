@@ -1,4 +1,0 @@
-module TDDKata {
-    header "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.build/TDDKata-Swift.h"
-    requires objc
-}

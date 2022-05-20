@@ -1,4 +1,0 @@
-module TaggedTime {
-    header "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.build/TaggedTime-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module ScoreKeeper {
-    header "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.build/ScoreKeeper-Swift.h"
-    requires objc
-}
