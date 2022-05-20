@@ -12,9 +12,16 @@ final class ScoreKeeper {
         } else if n1.count == 1 {
             n1 = "00" + n1
         }
-        return "\(n1)-000" 
+         var n2 = "\(teamBScore)"
+        if n2.count == 2 {
+            n2 = "0" + n2
+        } else if n2.count == 1 {
+            n2 = "00" + n2
+        }
+        return "\(n1)-\(n2)" 
     }
     var teamAScore = 0
+    var teamBScore = 0
     func getScore() -> String {
         return score
     }
@@ -27,6 +34,15 @@ final class ScoreKeeper {
     }
     func scoreTeamA3() {
         teamAScore += 3
+    }
+    func scoreTeamB1() {
+        teamBScore += 1
+    }
+    func scoreTeamB2() {
+        teamBScore += 2
+    }
+    func scoreTeamB3() {
+        teamBScore += 3
     }
 }
 
@@ -64,5 +80,18 @@ class ScoreKeeperTests: XCTestCase {
         XCTAssertEqual(sut.getScore(), "009-000")
          sut.scoreTeamA3()
         XCTAssertEqual(sut.getScore(), "012-000")
+
+        sut.scoreTeamB1()
+        XCTAssertEqual(sut.getScore(), "012-001")
+        sut.scoreTeamB2()
+        XCTAssertEqual(sut.getScore(), "012-003")
+         sut.scoreTeamB3()
+        XCTAssertEqual(sut.getScore(), "012-006")
+         sut.scoreTeamB1()
+        XCTAssertEqual(sut.getScore(), "012-007")
+        sut.scoreTeamB2()
+        XCTAssertEqual(sut.getScore(), "012-009")
+         sut.scoreTeamB3()
+        XCTAssertEqual(sut.getScore(), "012-012")
     }
 }

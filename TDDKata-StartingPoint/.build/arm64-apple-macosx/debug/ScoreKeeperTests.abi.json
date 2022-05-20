@@ -168,6 +168,105 @@
           ]
         },
         {
+          "kind": "Var",
+          "name": "teamBScore",
+          "printedName": "teamBScore",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:16ScoreKeeperTests0aB0C10teamBScoreSivp",
+          "mangledName": "$s16ScoreKeeperTests0aB0C10teamBScoreSivp",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16ScoreKeeperTests0aB0C10teamBScoreSivg",
+              "mangledName": "$s16ScoreKeeperTests0aB0C10teamBScoreSivg",
+              "moduleName": "ScoreKeeperTests",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16ScoreKeeperTests0aB0C10teamBScoreSivs",
+              "mangledName": "$s16ScoreKeeperTests0aB0C10teamBScoreSivs",
+              "moduleName": "ScoreKeeperTests",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16ScoreKeeperTests0aB0C10teamBScoreSivM",
+              "mangledName": "$s16ScoreKeeperTests0aB0C10teamBScoreSivM",
+              "moduleName": "ScoreKeeperTests",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
           "kind": "Function",
           "name": "getScore",
           "printedName": "getScore()",
@@ -242,6 +341,66 @@
           "declKind": "Func",
           "usr": "s:16ScoreKeeperTests0aB0C11scoreTeamA3yyF",
           "mangledName": "$s16ScoreKeeperTests0aB0C11scoreTeamA3yyF",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "scoreTeamB1",
+          "printedName": "scoreTeamB1()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:16ScoreKeeperTests0aB0C11scoreTeamB1yyF",
+          "mangledName": "$s16ScoreKeeperTests0aB0C11scoreTeamB1yyF",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "scoreTeamB2",
+          "printedName": "scoreTeamB2()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:16ScoreKeeperTests0aB0C11scoreTeamB2yyF",
+          "mangledName": "$s16ScoreKeeperTests0aB0C11scoreTeamB2yyF",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "scoreTeamB3",
+          "printedName": "scoreTeamB3()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:16ScoreKeeperTests0aB0C11scoreTeamB3yyF",
+          "mangledName": "$s16ScoreKeeperTests0aB0C11scoreTeamB3yyF",
           "moduleName": "ScoreKeeperTests",
           "declAttributes": [
             "Final"
