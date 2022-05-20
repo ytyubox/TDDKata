@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/master.swiftdeps"
+  },
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/BowlingGamePresenterTests.swift": {
+    "dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests.d",
+    "object": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests.swift.o",
+    "swiftmodule": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests.swiftdeps"
+  },
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/BowlingGameTests.swift": {
+    "dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests.d",
+    "object": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests.swift.o",
+    "swiftmodule": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests.swiftdeps"
+  }
+}

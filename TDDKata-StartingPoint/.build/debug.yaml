@@ -1,0 +1,240 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "BowlingGame-debug.module": ["<BowlingGame-debug.module>"]
+  "BowlingGameTests-debug.module": ["<BowlingGameTests-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "ScoreKeeper-debug.module": ["<ScoreKeeper-debug.module>"]
+  "ScoreKeeperTests-debug.module": ["<ScoreKeeperTests-debug.module>"]
+  "TDDKata-debug.module": ["<TDDKata-debug.module>"]
+  "TDDKataPackageTests-debug.test": ["<TDDKataPackageTests-debug.test>"]
+  "TDDKataTests-debug.module": ["<TDDKataTests-debug.module>"]
+  "Tagged-debug.module": ["<Tagged-debug.module>"]
+  "TaggedMoney-debug.module": ["<TaggedMoney-debug.module>"]
+  "TaggedTime-debug.module": ["<TaggedTime-debug.module>"]
+  "main": ["<BowlingGame-debug.module>","<ScoreKeeper-debug.module>","<TDDKata-debug.module>"]
+  "test": ["<BowlingGame-debug.module>","<BowlingGameTests-debug.module>","<ScoreKeeper-debug.module>","<ScoreKeeperTests-debug.module>","<TDDKata-debug.module>","<TDDKataPackageTests-debug.test>","<TDDKataTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/BowlingGame/":
+    is-directory-structure: true
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/ScoreKeeper/":
+    is-directory-structure: true
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/TDDKata/":
+    is-directory-structure: true
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/":
+    is-directory-structure: true
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/ScoreKeeperTests/":
+    is-directory-structure: true
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/TDDKataTests/":
+    is-directory-structure: true
+commands:
+  "<BowlingGame-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.swiftmodule"]
+    outputs: ["<BowlingGame-debug.module>"]
+
+  "<BowlingGameTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.swiftmodule"]
+    outputs: ["<BowlingGameTests-debug.module>"]
+
+  "<ScoreKeeper-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.build/ScoreKeeper.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.swiftmodule"]
+    outputs: ["<ScoreKeeper-debug.module>"]
+
+  "<ScoreKeeperTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.swiftmodule"]
+    outputs: ["<ScoreKeeperTests-debug.module>"]
+
+  "<TDDKata-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.build/TDDKata.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.swiftmodule"]
+    outputs: ["<TDDKata-debug.module>"]
+
+  "<TDDKataPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataPackageTests.xctest/Contents/MacOS/TDDKataPackageTests"]
+    outputs: ["<TDDKataPackageTests-debug.test>"]
+
+  "<TDDKataTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.build/TDDKataTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.swiftmodule"]
+    outputs: ["<TDDKataTests-debug.module>"]
+
+  "<Tagged-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule"]
+    outputs: ["<Tagged-debug.module>"]
+
+  "<TaggedMoney-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.build/TaggedMoney.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.swiftmodule"]
+    outputs: ["<TaggedMoney-debug.module>"]
+
+  "<TaggedTime-debug.module>":
+    tool: phony
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.build/TaggedTime.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.swiftmodule"]
+    outputs: ["<TaggedTime-debug.module>"]
+
+  "C.BowlingGame-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/BowlingGame/BowlingGame.swift"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "BowlingGame"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame-Swift.h","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/BowlingGame/BowlingGame.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.BowlingGameTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/BowlingGamePresenterTests.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/BowlingGameTests.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.swiftmodule"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "BowlingGameTests"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests.swift.o"]
+    other-args: ["-target","arm64-apple-macosx11.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/BowlingGamePresenterTests.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/BowlingGameTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.ScoreKeeper-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/ScoreKeeper/ScoreKeeper.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.build/ScoreKeeper.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "ScoreKeeper"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.build/ScoreKeeper.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.build/ScoreKeeper-Swift.h","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/ScoreKeeper/ScoreKeeper.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.ScoreKeeperTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/ScoreKeeperTests/ScoreKeeperTests.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.swiftmodule","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "ScoreKeeperTests"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests.swift.o"]
+    other-args: ["-target","arm64-apple-macosx11.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/ScoreKeeperTests/ScoreKeeperTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.TDDKata-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/TDDKata/TDDKata.swift"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.build/TDDKata.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "TDDKata"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.build/TDDKata.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.build/TDDKata-Swift.h","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/TDDKata/TDDKata.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.TDDKataPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGamePresenterTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.build/BowlingGameTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.build/ScoreKeeper.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.build/TDDKata.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.build/TDDKataTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged.swift.o"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataPackageTests.xctest/Contents/MacOS/TDDKataPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/TDDKataPackageTests.xctest/Contents/MacOS/TDDKataPackageTests"
+    args: ["/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug","-o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataPackageTests.xctest/Contents/MacOS/TDDKataPackageTests","-module-name","TDDKataPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-Xlinker","-rpath","-Xlinker","/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx","-target","arm64-apple-macosx11.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGameTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeper.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.TDDKataTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/TDDKataTests/TDDKataTests.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKata.swiftmodule"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.build/TDDKataTests.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "TDDKataTests"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TDDKataTests.build/TDDKataTests.swift.o"]
+    other-args: ["-target","arm64-apple-macosx11.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/TDDKataTests/TDDKataTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.Tagged-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/checkouts/swift-tagged/Sources/Tagged/Tagged.swift"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "Tagged"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged-Swift.h","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/checkouts/swift-tagged/Sources/Tagged/Tagged.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.TaggedMoney-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/checkouts/swift-tagged/Sources/TaggedMoney/TaggedMoney.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.build/TaggedMoney.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "TaggedMoney"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.build/TaggedMoney.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.build/TaggedMoney-Swift.h","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/checkouts/swift-tagged/Sources/TaggedMoney/TaggedMoney.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.TaggedTime-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/checkouts/swift-tagged/Sources/TaggedTime/TaggedTime.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.swiftmodule"]
+    outputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.build/TaggedTime.swift.o","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "TaggedTime"
+    module-output-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.swiftmodule"
+    import-paths: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.build"
+    objects: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.build/TaggedTime.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedTime.build/TaggedTime-Swift.h","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/checkouts/swift-tagged/Sources/TaggedTime/TaggedTime.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/BowlingGame/","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/ScoreKeeper/","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/TDDKata/","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/BowlingGameTests/","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/ScoreKeeperTests/","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/TDDKataTests/","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Package.swift","/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

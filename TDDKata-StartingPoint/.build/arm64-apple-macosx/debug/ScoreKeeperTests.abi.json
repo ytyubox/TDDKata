@@ -1,0 +1,417 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "ScoreKeeperTests",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "XCTest",
+      "printedName": "XCTest",
+      "declKind": "Import",
+      "moduleName": "ScoreKeeperTests"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ScoreKeeper",
+      "printedName": "ScoreKeeper",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "score",
+          "printedName": "score",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:16ScoreKeeperTests0aB0C5scoreSSvp",
+          "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvp",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16ScoreKeeperTests0aB0C5scoreSSvg",
+              "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvg",
+              "moduleName": "ScoreKeeperTests",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16ScoreKeeperTests0aB0C5scoreSSvs",
+              "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvs",
+              "moduleName": "ScoreKeeperTests",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16ScoreKeeperTests0aB0C5scoreSSvM",
+              "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvM",
+              "moduleName": "ScoreKeeperTests",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "getScore",
+          "printedName": "getScore()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:16ScoreKeeperTests0aB0C03getA0SSyF",
+          "mangledName": "$s16ScoreKeeperTests0aB0C03getA0SSyF",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "scoreTeamA1",
+          "printedName": "scoreTeamA1()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:16ScoreKeeperTests0aB0C11scoreTeamA1yyF",
+          "mangledName": "$s16ScoreKeeperTests0aB0C11scoreTeamA1yyF",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ScoreKeeper",
+              "printedName": "ScoreKeeperTests.ScoreKeeper",
+              "usr": "s:16ScoreKeeperTests0aB0C"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:16ScoreKeeperTests0aB0CACycfc",
+          "mangledName": "$s16ScoreKeeperTests0aB0CACycfc",
+          "moduleName": "ScoreKeeperTests",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:16ScoreKeeperTests0aB0C",
+      "mangledName": "$s16ScoreKeeperTests0aB0C",
+      "moduleName": "ScoreKeeperTests",
+      "declAttributes": [
+        "Final"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ScoreKeeperTests",
+      "printedName": "ScoreKeeperTests",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "readme",
+          "printedName": "readme",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:16ScoreKeeperTestsAAC6readme33_1C3CFF65C2BEC38CB5850BBAC40E2423LLSSvp",
+          "mangledName": "$s16ScoreKeeperTestsAAC6readme33_1C3CFF65C2BEC38CB5850BBAC40E2423LLSSvp",
+          "moduleName": "ScoreKeeperTests",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Function",
+          "name": "test",
+          "printedName": "test()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests(im)test",
+          "mangledName": "$s16ScoreKeeperTestsAAC4testyyF",
+          "moduleName": "ScoreKeeperTests",
+          "isOpen": true,
+          "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(invocation:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ScoreKeeperTests",
+              "printedName": "ScoreKeeperTests.ScoreKeeperTests",
+              "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.NSInvocation?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSInvocation",
+                  "printedName": "Foundation.NSInvocation",
+                  "usr": "c:objc(cs)NSInvocation"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests(im)initWithInvocation:",
+          "mangledName": "$s16ScoreKeeperTestsAAC10invocationABSo12NSInvocationCSg_tcfc",
+          "moduleName": "ScoreKeeperTests",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithInvocation:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(selector:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ScoreKeeperTests",
+              "printedName": "ScoreKeeperTests.ScoreKeeperTests",
+              "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Selector",
+              "printedName": "ObjectiveC.Selector",
+              "usr": "s:10ObjectiveC8SelectorV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests(im)initWithSelector:",
+          "mangledName": "$s16ScoreKeeperTestsAAC8selectorAB10ObjectiveC8SelectorV_tcfc",
+          "moduleName": "ScoreKeeperTests",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithSelector:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ScoreKeeperTests",
+              "printedName": "ScoreKeeperTests.ScoreKeeperTests",
+              "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests(im)init",
+          "mangledName": "$s16ScoreKeeperTestsAACABycfc",
+          "moduleName": "ScoreKeeperTests",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@ScoreKeeperTests@objc(cs)ScoreKeeperTests",
+      "mangledName": "$s16ScoreKeeperTestsAAC",
+      "moduleName": "ScoreKeeperTests",
+      "isOpen": true,
+      "declAttributes": [
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)XCTestCase",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "XCTest.XCTestCase",
+        "XCTest.XCTest",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

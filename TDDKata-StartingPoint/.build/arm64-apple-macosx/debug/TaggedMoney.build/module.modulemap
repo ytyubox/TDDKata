@@ -1,0 +1,4 @@
+module TaggedMoney {
+    header "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/TaggedMoney.build/TaggedMoney-Swift.h"
+    requires objc
+}

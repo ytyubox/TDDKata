@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/master.swiftdeps"
+  },
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/BowlingGame/BowlingGame.swift": {
+    "dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame.d",
+    "object": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame.swift.o",
+    "swiftmodule": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame~partial.swiftmodule",
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame.swiftdeps"
+  }
+}

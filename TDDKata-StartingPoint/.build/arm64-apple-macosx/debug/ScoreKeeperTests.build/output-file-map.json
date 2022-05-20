@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/master.swiftdeps"
+  },
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/ScoreKeeperTests/ScoreKeeperTests.swift": {
+    "dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests.d",
+    "object": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests.swift.o",
+    "swiftmodule": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/ScoreKeeperTests.build/ScoreKeeperTests.swiftdeps"
+  }
+}

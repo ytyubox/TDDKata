@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/master.swiftdeps"
+  },
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/checkouts/swift-tagged/Sources/Tagged/Tagged.swift": {
+    "dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged.d",
+    "object": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged.swift.o",
+    "swiftmodule": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged~partial.swiftmodule",
+    "swift-dependencies": "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged.swiftdeps"
+  }
+}

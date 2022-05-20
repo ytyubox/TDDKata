@@ -5,8 +5,12 @@
 import Foundation
 import XCTest
 final class ScoreKeeper {
+    var score = "000-000" 
     func getScore() -> String {
-        "000-000"
+        return score
+    }
+    func scoreTeamA1() {
+        self.score = "001-000"
     }
 }
 
@@ -32,5 +36,7 @@ class ScoreKeeperTests: XCTestCase {
     func test() {
         let sut = ScoreKeeper()
         XCTAssertEqual(sut.getScore(), "000-000")
+        sut.scoreTeamA1()
+        XCTAssertEqual(sut.getScore(), "001-000")
     }
 }

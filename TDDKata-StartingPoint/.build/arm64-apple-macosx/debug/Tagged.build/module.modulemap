@@ -1,0 +1,4 @@
+module Tagged {
+    header "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/Tagged.build/Tagged-Swift.h"
+    requires objc
+}

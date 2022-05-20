@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
+options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
+build_start_time: [1652984757, 12961864]
+build_end_time: [1652984757, 153553009]
+inputs:
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Sources/ScoreKeeper/ScoreKeeper.swift": [1652969496, 754889011]

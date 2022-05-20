@@ -1,0 +1,4 @@
+module BowlingGame {
+    header "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/.build/arm64-apple-macosx/debug/BowlingGame.build/BowlingGame-Swift.h"
+    requires objc
+}
