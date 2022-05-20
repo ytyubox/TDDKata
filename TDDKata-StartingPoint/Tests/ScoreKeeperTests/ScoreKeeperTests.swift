@@ -15,6 +15,9 @@ final class ScoreKeeper {
     func scoreTeamA2() {
         self.score = "003-000"
     }
+    func scoreTeamA3() {
+        self.score = "006-000"
+    }
 }
 
 class ScoreKeeperTests: XCTestCase {
@@ -43,5 +46,7 @@ class ScoreKeeperTests: XCTestCase {
         XCTAssertEqual(sut.getScore(), "001-000")
         sut.scoreTeamA2()
         XCTAssertEqual(sut.getScore(), "003-000")
+         sut.scoreTeamA3()
+        XCTAssertEqual(sut.getScore(), "006-000")
     }
 }

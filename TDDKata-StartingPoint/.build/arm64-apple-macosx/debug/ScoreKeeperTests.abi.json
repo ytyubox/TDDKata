@@ -186,6 +186,26 @@
           "funcSelfKind": "NonMutating"
         },
         {
+          "kind": "Function",
+          "name": "scoreTeamA3",
+          "printedName": "scoreTeamA3()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:16ScoreKeeperTests0aB0C11scoreTeamA3yyF",
+          "mangledName": "$s16ScoreKeeperTests0aB0C11scoreTeamA3yyF",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
           "kind": "Constructor",
           "name": "init",
           "printedName": "init()",
