@@ -42,12 +42,8 @@
           "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvp",
           "moduleName": "ScoreKeeperTests",
           "declAttributes": [
-            "HasInitialValue",
-            "Final",
-            "HasStorage"
+            "Final"
           ],
-          "fixedbinaryorder": 0,
-          "hasStorage": true,
           "accessors": [
             {
               "kind": "Accessor",
@@ -64,6 +60,53 @@
               "declKind": "Accessor",
               "usr": "s:16ScoreKeeperTests0aB0C5scoreSSvg",
               "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvg",
+              "moduleName": "ScoreKeeperTests",
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "teamAScore",
+          "printedName": "teamAScore",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:16ScoreKeeperTests0aB0C10teamAScoreSivp",
+          "mangledName": "$s16ScoreKeeperTests0aB0C10teamAScoreSivp",
+          "moduleName": "ScoreKeeperTests",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16ScoreKeeperTests0aB0C10teamAScoreSivg",
+              "mangledName": "$s16ScoreKeeperTests0aB0C10teamAScoreSivg",
               "moduleName": "ScoreKeeperTests",
               "implicit": true,
               "declAttributes": [
@@ -84,14 +127,14 @@
                 },
                 {
                   "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:16ScoreKeeperTests0aB0C5scoreSSvs",
-              "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvs",
+              "usr": "s:16ScoreKeeperTests0aB0C10teamAScoreSivs",
+              "mangledName": "$s16ScoreKeeperTests0aB0C10teamAScoreSivs",
               "moduleName": "ScoreKeeperTests",
               "implicit": true,
               "declAttributes": [
@@ -112,8 +155,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:16ScoreKeeperTests0aB0C5scoreSSvM",
-              "mangledName": "$s16ScoreKeeperTests0aB0C5scoreSSvM",
+              "usr": "s:16ScoreKeeperTests0aB0C10teamAScoreSivM",
+              "mangledName": "$s16ScoreKeeperTests0aB0C10teamAScoreSivM",
               "moduleName": "ScoreKeeperTests",
               "implicit": true,
               "declAttributes": [

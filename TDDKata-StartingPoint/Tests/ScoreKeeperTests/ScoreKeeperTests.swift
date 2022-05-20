@@ -5,18 +5,28 @@
 import Foundation
 import XCTest
 final class ScoreKeeper {
-    var score = "000-000" 
+    var score:String {
+        var n1 = "\(teamAScore)"
+        if n1.count == 2 {
+            n1 = "0" + n1
+        } else if n1.count == 1 {
+            n1 = "00" + n1
+        }
+        return "\(n1)-000" 
+    }
+    var teamAScore = 0
     func getScore() -> String {
         return score
     }
+
     func scoreTeamA1() {
-        self.score = "001-000"
+        teamAScore += 1
     }
     func scoreTeamA2() {
-        self.score = "003-000"
+        teamAScore += 2
     }
     func scoreTeamA3() {
-        self.score = "006-000"
+        teamAScore += 3
     }
 }
 
@@ -48,5 +58,11 @@ class ScoreKeeperTests: XCTestCase {
         XCTAssertEqual(sut.getScore(), "003-000")
          sut.scoreTeamA3()
         XCTAssertEqual(sut.getScore(), "006-000")
+         sut.scoreTeamA1()
+        XCTAssertEqual(sut.getScore(), "007-000")
+        sut.scoreTeamA2()
+        XCTAssertEqual(sut.getScore(), "009-000")
+         sut.scoreTeamA3()
+        XCTAssertEqual(sut.getScore(), "012-000")
     }
 }
