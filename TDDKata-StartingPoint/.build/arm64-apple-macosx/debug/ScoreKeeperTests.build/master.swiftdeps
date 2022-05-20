@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "5595f32c40e746dbf4c2bffda528789b35a90ac2f2da97b70b807f8831a5c8eb"
-build_start_time: [1653053034, 210934162]
-build_end_time: [1653053034, 379746913]
+build_start_time: [1653053115, 845420837]
+build_end_time: [1653053116, 3171920]
 inputs:
-  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/ScoreKeeperTests/ScoreKeeperTests.swift": [1653053033, 537148475]
+  "/Users/tsungyu/code/TDDKata/TDDKata-StartingPoint/Tests/ScoreKeeperTests/ScoreKeeperTests.swift": [1653053115, 174903392]
